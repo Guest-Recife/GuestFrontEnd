@@ -21,14 +21,18 @@ export function Login(){
 
         request.post('/', user).then(resp => {
             localStorage.setItem('token', resp.data.body);
-            redirectLogin();
+            redirectProfile();
         }).catch(error => {
             console.log(error);
         });
     };
 
-    const redirectLogin = () => {
+    const redirectProfile = () => {
         window.location = '/profile';
+    };
+
+    const redirectRegister = () => {
+        window.location = '/register';
     };
 
 
@@ -59,7 +63,7 @@ export function Login(){
 
                 <div className='flex mt-4'>
                 <h4 className='text-xs text-gray-guest mr-1'>Não tem uma conta?</h4>
-                <p className='text-xs text-orange-guest hover:underline cursor-pointer'>Registre-se!</p>
+                <p onClick={redirectRegister } className='text-xs text-orange-guest hover:underline cursor-pointer'>Registre-se!</p>
                 </div>
 
                 <div className='w-32 mt-6 border-b border-gray-guest'></div>
