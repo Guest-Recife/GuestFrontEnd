@@ -13,7 +13,7 @@ interface RestaurantCard{
 
 export function RestaurantCard(props:RestaurantCard){
     return(
-        <div className="w-[30%]  flex gap-2 items-center justify-between p-4">
+        <div className="w-[30%]  flex gap-4 items-center p-4">
                 
             <img className="w-[100px] h-[100px] rounded-full" src={props.image} alt=""/>   
             

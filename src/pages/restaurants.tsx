@@ -18,7 +18,7 @@ export function Restaurants(){
             </div>
             
 
-            <div className="w-[80vw] items-center ml-[10vw] flex flex-wrap">
+            <div className="w-[90vw] items-center ml-[5vw] flex gap-6 flex-wrap">
 
                
                 <RestaurantCard
