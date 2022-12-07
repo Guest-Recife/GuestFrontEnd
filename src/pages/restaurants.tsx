@@ -4,16 +4,32 @@ export function Restaurants(){
         
         <body className="flex flex-col items-center">
 
-            <div className="blackfround-color: bg-orange-guest w-[100%]">
+            <div className="blackfround-color: bg-orange-guest w-[100%] h-[90px]">
 
                 <div>
-                    <h1 className="flex items-center ">RESTAURANTES</h1>
+                    <h1 className=" ">ONDE COMER?</h1>
                 </div>
                 
+                <div className="flex w-[100%]">
 
-                <div className="">
-                    <input type="Pesquisar" />                              
+                    <div className="flex justify-center ml-60 mr-5">
+                        <input className="w-[500px] h-[25px] rounded-2xl" type="text" placeholder=" Pesquisar restaurantes"/>                              
+                    </div>
+
+                    <div className="flex justify-center mr-5">
+                        <input className="w-[250px] h-[25px] rounded-2xl" type="text" placeholder=" Localização"/>                              
+                    </div>
+
+                    <div className="">
+                        <input className="w-[250px] h-[25px] rounded-2xl" type="text" placeholder=" Preço"/>
+                    </div>
+
+                    <div className="flex ml-14">
+                         <button>SAIR </button>
+                    </div>
                 </div>
+
+               
 
             </div>
             
@@ -28,7 +44,7 @@ export function Restaurants(){
                     stars="★★★"
                     reviews="276"
                     price="$$$"
-
+        
                 />  
 
                 <RestaurantCard
