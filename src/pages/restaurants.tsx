@@ -10,17 +10,17 @@ export function Restaurants(){
 
                     <div className="w-full mb-4">
                         <input type="text" placeholder="Pesquise por comidas, restaurantes..." 
-                            className="w-full p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none"
+                            className="w-full p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-gray-guest"
                             />
                     </div>
 
                     <div className="flex gap-4 w-full">
                         <input type="text" placeholder="Localização" 
-                            className="block w-3/5 p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none"
+                            className="block w-3/5 p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-gray-guest"
                         />
 
                         <input type="text" placeholder="Preço" 
-                            className="block w-2/5 p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none"
+                            className="block w-2/5 p-2 text-gray-guest rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-gray-guest"
                         />
                     </div>
 
@@ -38,9 +38,13 @@ export function Restaurants(){
                 </div>
 
             </div>
+
+            <div className="mt-4 w-[85vw] text-lg font-semibold flex justify-self-start">
+                Restaurantes
+            </div>
             
 
-            <div className="w-[90vw] items-center ml-[5vw] mt-12 flex gap-6 flex-wrap">
+            <div className="w-[90vw] items-center ml-[5vw] mt-8 flex gap-6 flex-wrap">
 
                
                 <RestaurantCard
