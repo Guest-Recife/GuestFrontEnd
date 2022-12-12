@@ -6,6 +6,7 @@ import {createBrowserRouter, RouterProvider, useRouteError } from 'react-router-
 import { Login } from './pages/login'
 import { Profile } from './pages/profile'
 import { Restaurants } from './pages/restaurants'
+import { Menu } from './pages/menu'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/restaurants",
     element: <Restaurants/>
+  },
+  {
+    path: "/menu",
+    element: <Menu/>
   }
   
 ])

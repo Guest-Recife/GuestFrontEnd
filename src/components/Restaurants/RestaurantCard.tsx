@@ -1,5 +1,3 @@
-import fotosrestaurantes from "../../../public/logojhonny.jpg"
-
 interface RestaurantCard{
     
     image: string
@@ -34,6 +32,7 @@ export function RestaurantCard(props:RestaurantCard){
                 </div>        
 
                 <h3 className="text-orange-guest">{props.price}</h3>
+                
 
             </div>
 
