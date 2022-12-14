@@ -1,6 +1,25 @@
+import React, {useState, useEffect} from "react";
 import { PerfilOptions } from "../components/Form/PerfilOptions";
 
+import ApiService from "../services/api";
+
 export function Profile(){
+    const [user, setUser] = useState([]);
+
+    useEffect(() => {
+        const getUserInfo = () => {
+            const request = ApiService.request();
+
+            return request.get('/user');
+        };
+
+        getUserInfo().then(({ data }) => {
+            setUser(data && data.body);
+        }).catch(error => {
+            console.log(error);
+        });
+    }, []);
+
     return (
         <div>
         <div className="h-[15vh] bg-orange-guest flex items-center justify-center">
@@ -9,8 +28,8 @@ export function Profile(){
                 <img className="mr-8 w-20 h-20 rounded-full drop-shadow-lg" src="../public/foto-perfil.jpeg" alt="Foto de Perfil" />
             </div>
             <div className='flex flex-col items-center'>
-                <h1 className='text-2xl text-white'>Gabriel de Assunção Ferreira</h1>
-                <h4 className='mt-0.5 text-xs text-white'>gabrielferreira@gmail.com | (81) 99700-9045</h4>
+                <h1 className='text-2xl text-white'>{user.name}</h1>
+                <h4 className='mt-0.5 text-xs text-white'>{user.email} | {user.phone}</h4>
             </div>
             </div>
         </div>
