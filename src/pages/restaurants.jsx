@@ -21,7 +21,7 @@ export function Restaurants(){
     }, []);
 
     return(
-        <body className="flex flex-col items-center">
+        <body className="flex flex-col items-center pb-8">
 
             <div className="background-color: bg-orange-guest w-[100%] h-[20vh] flex flex-col items-center p-4 justify-center">
 
