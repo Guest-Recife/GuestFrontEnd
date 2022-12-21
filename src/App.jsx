@@ -7,6 +7,7 @@ import { Login } from './pages/login'
 import { Profile } from './pages/profile'
 import { Restaurants } from './pages/restaurants'
 import { Menu } from './pages/menu'
+import { Offers } from './pages/offers'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,12 @@ const router = createBrowserRouter([
   {
     path: "/menu",
     element: <Menu/>
+  },
+  {
+    path: "/offers",
+    element: <Offers/>
   }
+
 ])
 
 function App() {
