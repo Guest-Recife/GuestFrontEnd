@@ -25,11 +25,10 @@ export function Register() {
     const sendForm = () => {
         if (user.password !== user.repeat_password) return
 
-        const request = ApiService.request();
+        const request = ApiService.request({ without_token: true });
 
         request.post('/sign-up', omit(user, 'repeat_password')).then(resp => {
             redirectLogin();
-            console.log(resp);
         }).catch(error => {
             console.log(error);
         });

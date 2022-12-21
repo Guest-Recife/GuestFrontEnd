@@ -17,7 +17,7 @@ export function Login(){
     }
 
     const sendForm = () => {
-        const request = ApiService.request();
+        const request = ApiService.request({ without_token: true });
 
         request.post('/', user).then(resp => {
             localStorage.setItem('token', resp.data.body);
