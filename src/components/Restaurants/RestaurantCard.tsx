@@ -11,7 +11,7 @@ interface RestaurantCard{
 
 export function RestaurantCard(props:RestaurantCard){
     return(
-        <div className=" rounded-lg cursor-pointer w-[30%] flex gap-4 items-center p-4 transition duration-500 hover:scale-110 hover:shadow-md">
+        <div className=" rounded-lg cursor-pointer w-[30%] flex gap-4 items-center p-4 transition duration-500 hover:scale-110 hover:shadow-md max-sm:w-[80vw]">
                 
             <img className="w-[100px] h-[100px] rounded-full" src={props.image} alt=""/>   
             

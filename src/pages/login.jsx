@@ -33,12 +33,12 @@ export function Login(){
 
 
     return (
-        <div className="h-screen bg-orange-guest flex flex-col items-center justify-center">
+        <div className="h-screen bg-gradient-to-l from-orange-guest to-hover-orange-guest flex flex-col items-center justify-center">
             <img className="w-60 mb-8" src="../public/logo-guest.png" alt="Guest Logo" />
 
-            <form className="w-full max-w-2xl  bg-white flex flex-col p-8 items-center rounded-lg h-4/6 drop-shadow-md justify-center">
-                <h1 className='text-2xl text-black'>Seja bem vindo novamente!</h1>
-                <h3 className='text-md text-gray-guest'>Preencha o formulário para continuar.</h3>
+            <form className="w-full h-4/6 max-w-2xl bg-white flex flex-col p-8 items-center rounded-lg drop-shadow-md justify-center max-sm:w-[90vw]">
+                <h1 className='text-2xl text-black max-sm:text-xl'>Seja bem vindo novamente!</h1>
+                <h3 className='text-md text-gray-guest max-sm:text-sm'>Preencha o formulário para continuar.</h3>
 
                 <Input name='login' id='login' placeholder='Telefone/Email' onChange={valueInput} value={user.login} type='login' aria-label='Login'></Input>
                 <Input name='password' id='password' placeholder='Senha' onChange={valueInput} value={user.password} type='password' aria-label='Password'></Input>
@@ -55,7 +55,7 @@ export function Login(){
                 <h4 className='text-xs text-gray-guest mr-1'>Esqueceu a senha?</h4>
                 </div>
 
-                <Button fn={sendForm} children='Entrar' color='orange-guest'></Button>
+                <Button fn={sendForm} children='Entrar'></Button>
 
                 <div className='flex mt-4'>
                 <h4 className='text-xs text-gray-guest mr-1'>Não tem uma conta?</h4>

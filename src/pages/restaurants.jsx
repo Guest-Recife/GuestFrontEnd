@@ -27,13 +27,13 @@ export function Restaurants(){
 
                 <div className="flex flex-col items-center w-3/5"> 
 
-                    <div className="w-full mb-4">
+                    <div className="w-full mb-4 max-sm:w-[80vw]">
                         <input type="text" placeholder="Pesquise por comidas, restaurantes..." 
                             className="w-full p-2 text-black rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-gray-guest"
                             />
                     </div>
 
-                    <div className="flex gap-4 w-full">
+                    <div className="flex gap-4 w-full max-sm:w-[80vw]">
                         <input type="text" placeholder="Localização" 
                             className="block w-3/5 p-2 text-black rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-gray-guest"
                         />
@@ -62,7 +62,7 @@ export function Restaurants(){
                 Restaurantes
             </div>
 
-            <div className="w-[90vw] items-center ml-[5vw] mt-8 flex gap-6 flex-wrap">
+            <div className="w-[90vw] items-center ml-[5vw] mt-8 flex gap-6 flex-wrap max-sm:ml-0 max-sm:justify-center">
 
                {
                    restaurants.map(restaurant => {
