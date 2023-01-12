@@ -6,6 +6,8 @@ interface MenuCard{
     
 }
 
+//update
+
 export function MenuCard(props:MenuCard){
     return(
         <div className=" rounded-lg w-[30%] flex items-center p-4 shadow-lg max-sm:w-[80vw]">
