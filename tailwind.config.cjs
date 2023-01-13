@@ -18,6 +18,7 @@ module.exports = {
       'green': '#13ce66',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
+      'gray-superligth': '#f6f8fa',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
       'facebook-blue': '#507CC0'
