@@ -8,6 +8,7 @@ import { Profile } from './pages/profile'
 import { Restaurants } from './pages/restaurants'
 import { Menu } from './pages/menu'
 import { Offers } from './pages/offers'
+import { Payment } from './pages/payment'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/offers",
     element: <Offers/>
+  },
+  {
+    path: "/payment",
+    element: <Payment/>
   }
 
 ])

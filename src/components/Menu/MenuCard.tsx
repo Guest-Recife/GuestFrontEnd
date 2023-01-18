@@ -1,5 +1,7 @@
 import React from "react";
 import { X as Close } from 'phosphor-react'
+import { PlusCircle } from 'phosphor-react'
+import { MinusCircle } from 'phosphor-react'
 
 interface MenuCard{
     
@@ -39,9 +41,9 @@ export function MenuCard(props:MenuCard){
                     {showModal ? (
                         <>
                             <div
-                                className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                                className="justify-center items-center flex fixed inset-0 z-50 outline-none focus:outline-none"
                             >
-                                <div className="relative w-auto my-6 mx-auto max-w-3xl max-sm:w-[80vw] ">
+                                <div className="relative w-[50vw] my-6 mx-auto max-w-3xl max-sm:w-[90vw] ">
                                 {/*content*/}
                                 <div className="border-0 rounded-2xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                     {/*header*/}
@@ -59,9 +61,32 @@ export function MenuCard(props:MenuCard){
                                     </div>
 
                                     <div className="flex self-center justify-between w-4/5 p-5 shadow-xl mt-4">
-                                        <div className="max-sm:text-xs">Mesa: 08</div>
-                                        <div className="max-sm:text-xs">Garçom: Marcos</div>
-                                        <div className="max-sm:text-xs">Tempo: 1h32m</div>
+                                        <div  className="flex items-center" >
+                                            <div  className="max-sm:text-xs font-bold">
+                                                Mesa:
+                                            </div>
+                                            <div className="max-sm:text-xs ml-1">
+                                                08
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-center">
+                                            <div className="max-sm:text-xs font-bold">
+                                                Garçom:
+                                            </div>
+                                            <div className="max-sm:text-xs ml-1">
+                                                Marcos
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-center">
+                                            <div className="max-sm:text-xs font-bold">
+                                                Tempo:
+                                            </div>
+                                            <div className="max-sm:text-xs ml-1">
+                                                1h32m
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div className="flex items-start justify-between pt-8 rounded-t w-4/5 self-center mb-4">
@@ -72,50 +97,86 @@ export function MenuCard(props:MenuCard){
                                         <div className="text-gray-guest">3</div>
                                     </div>
 
-                                    <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
-                                        <div className="flex items-center justify-between w-full">
-                                            <div className="flex flex-col">
-                                                <div  className="text-black font-bold">Chicken Wings</div>
-                                                <div className="text-gray-guest font-medium">R$ 32,90</div>
-                                            </div>
+                                    <div className="max-h-64 flex flex-col overflow-y-scroll overscroll-contain">
 
-                                            <div className="flex">
-                                                <div>-</div>
-                                                <div>1</div>
-                                                <div>+</div>
+                                        <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
+                                            <div className="flex items-center justify-between w-full">
+                                                <div className="flex flex-col">
+                                                    <div  className="text-black font-bold">Chicken Wings</div>
+                                                    <div className="text-gray-guest font-medium">R$ 32,90</div>
+                                                </div>
+
+                                                <div className="flex items-center gap-2">
+                                                    <MinusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                    <div className="text-gray-guest">1</div>
+                                                    <PlusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
-                                        <div className="flex justify-between w-full">
-                                            <div className="flex flex-col">
-                                                <div className="text-black font-bold">Chicken Wings</div>
-                                                <div  className="text-gray-guest font-medium">R$ 32,90</div>
-                                            </div>
+                                        <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
+                                            <div className="flex justify-between w-full">
+                                                <div className="flex flex-col">
+                                                    <div className="text-black font-bold">Coca Cola 350ml</div>
+                                                    <div  className="text-gray-guest font-medium">R$ 5,90</div>
+                                                </div>
 
-                                            <div className="flex">
-                                                <div>-</div>
-                                                <div>1</div>
-                                                <div>+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
-                                        <div className="flex justify-between w-full">
-                                            <div className="flex flex-col">
-                                                <div className="text-black font-bold">Chicken Wings</div>
-                                                <div className="text-gray-guest font-medium">R$ 32,90</div>
-                                            </div>
-
-                                            <div className="flex">
-                                                <div>-</div>
-                                                <div>1</div>
-                                                <div>+</div>
+                                                <div className="flex items-center gap-2">
+                                                    <MinusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                    <div className="text-gray-guest">1</div>
+                                                    <PlusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
+                                            <div className="flex justify-between w-full">
+                                                <div className="flex flex-col">
+                                                    <div className="text-black font-bold">Coxinha de Costela</div>
+                                                    <div className="text-gray-guest font-medium">R$ 9,90</div>
+                                                </div>
+
+                                                <div className="flex items-center gap-2">
+                                                    <MinusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                    <div className="text-gray-guest">1</div>
+                                                    <PlusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
+                                            <div className="flex justify-between w-full">
+                                                <div className="flex flex-col">
+                                                    <div className="text-black font-bold">Coxinha de Costela</div>
+                                                    <div className="text-gray-guest font-medium">R$ 9,90</div>
+                                                </div>
+
+                                                <div className="flex items-center gap-2">
+                                                    <MinusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                    <div className="text-gray-guest">1</div>
+                                                    <PlusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
+                                            <div className="flex justify-between w-full">
+                                                <div className="flex flex-col">
+                                                    <div className="text-black font-bold">Coxinha de Costela</div>
+                                                    <div className="text-gray-guest font-medium">R$ 9,90</div>
+                                                </div>
+
+                                                <div className="flex items-center gap-2">
+                                                    <MinusCircle size={32} weight='thin' color="#DE5C3D"  className="cursor-pointer"/>
+                                                    <div className="text-gray-guest">1</div>
+                                                    <PlusCircle size={32} weight='thin' color="#DE5C3D" className="cursor-pointer"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
+
+                                    
 
                                     <div className="flex items-start justify-between pt-8 rounded-t w-4/5 self-center mb-4">
                                         <h3 className="text-black text-xl font-semibold">
@@ -124,19 +185,11 @@ export function MenuCard(props:MenuCard){
 
                                         <div className="text-gray-guest">R$ 48,70</div>
                                     </div>
-                                    
-
-                                    {/*body*/}
-                                    <div className="relative p-6 flex-auto">
-                                    <p className="text-marcilio-blue-500 my-4 text-slate-500 text-lg leading-relaxed">
-                                        I always felt like I could do anything. That’s the main
-                                        thing people are controlled by!
-                                    </p>
-                                    </div>
+                                
                                     {/*footer*/}
                                     <div className="flex items-center justify-center p-6">
                                         <button
-                                            className=" w-4/5 bg-marcilio-blue-500 text-white bg-orange-guest active:bg-hover-orange-guest font-bold rounded-2xl text-sm px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            className=" w-4/5 bg-marcilio-blue-500 text-white bg-orange-guest hover:bg-hover-orange-guest font-bold rounded-2xl text-sm px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                             type="button"
                                             onClick={() => setShowModal(false)}
                                         >
