@@ -19,7 +19,7 @@ export function OffersCard(props:Offers){
 
                     <div className="flex flex-col gap-1">
 
-                        <h3 className=" pl-2 font-bold text-green text-xl">R$ {props.price}</h3>
+                        <h3 className=" pl-2 font-bold text-green text-xl max-sm:text-base">R$ {props.price}</h3>
 
                     </div>
                     
