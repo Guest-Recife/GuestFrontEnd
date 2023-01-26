@@ -16,7 +16,7 @@ interface MenuCard{
 export function MenuCard(props:MenuCard){
 
     const [showModal, setShowModal] = React.useState(false);
-
+    
     return(
         <div className=" rounded-lg w-[30%] flex items-center p-4 shadow-lg max-sm:w-[80vw]">
                 
@@ -29,11 +29,11 @@ export function MenuCard(props:MenuCard){
 
                     <div className="flex flex-col gap-1">
 
-                        <h3 className=" pl-2 font-bold text-orange-guest">R$ {props.price}</h3>
+                        <h3 className="pl-2 font-bold text-orange-guest ml-1.5">R$ {props.price}</h3>
 
                         {/* <button className="pl-2 pr-2 pt-1 pb-1 bg-orange-guest rounded-2xl text-white text-xs transition duration-500 hover:shadow-2xl hover:bg-hover-orange-guest cursor-pointer hover:translate-y-1">Adicionar Item</button> */}
 
-                        <button className="pl-2 pr-2 pt-1 pb-1 bg-orange-guest rounded-2xl text-white text-xs transition duration-500 hover:shadow-2xl hover:bg-hover-orange-guest cursor-pointer hover:translate-y-1"
+                        <button className="pl-2 pr-2 pt-1 pb-1 bg-orange-guest rounded-2xl text-white text-xs transition duration-500 hover:shadow-2xl hover:bg-hover-orange-guest cursor-pointer hover:translate-y-1 mb-3"
                             onClick={() => setShowModal(true)}>
                                 Adicionar Item
                         </button>
@@ -97,7 +97,7 @@ export function MenuCard(props:MenuCard){
                                         <div className="text-gray-guest">3</div>
                                     </div>
 
-                                    <div className="max-h-64 flex flex-col overflow-y-scroll overscroll-contain">
+                                    <div className="max-h-64 flex flex-col overflow-y-scroll overscroll-contain scrollbar-hide">
 
                                         <div className="flex items-start justify-between rounded-t w-4/5 self-center bg-gray-superligth p-5 border-b border-solid border-black rounded-b">
                                             <div className="flex items-center justify-between w-full">

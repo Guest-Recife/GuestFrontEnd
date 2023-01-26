@@ -67,7 +67,7 @@ export function Payment(){
                     Carteira
                 </div>
                 
-                <div className="flex flex-col self-center justify-between w-3/5 max-h-64 max-sm:w-[90vw] p-5 shadow-xl overflow-y-scroll overscroll-contain">
+                <div className="flex flex-col self-center justify-between w-3/5 max-h-64 max-sm:w-[90vw] p-5 shadow-xl overflow-y-scroll overscroll-contain scrollbar-hide">
                     <div className="p-5 flex items-center justify-between w-full border-b border-solid border-gray-light">
                         <div className="text-gray-guest">**** **** **** 4587</div>
                         <div className="text-gray-guest">VISA</div>
@@ -91,7 +91,7 @@ export function Payment(){
                     Conta
                 </div>
 
-                <div className="flex flex-col self-center justify-between w-3/5 max-h-64 max-sm:w-[90vw] p-5 shadow-xl overflow-y-scroll overscroll-contain">
+                <div className="flex flex-col self-center justify-between w-3/5 max-h-64 max-sm:w-[90vw] p-5 shadow-xl overflow-y-scroll overscroll-contain scrollbar-hide">
                     <div className="p-5 flex items-center justify-between w-full text-gray-guest">
                         <div>Batata Blue Cheese</div>
                         <div>2x</div>
@@ -100,8 +100,14 @@ export function Payment(){
 
                     <div className="p-5 flex items-center justify-between w-full text-gray-guest">
                         <div>Burguer de Picanha</div>
-                        <div>2x</div>
+                        <div>2x</div>   
                         <div>R$ 21,90</div>
+                    </div>
+
+                    <div className="p-5 flex items-center justify-between w-full text-gray-guest">
+                        <div>Cerveja Sol</div>
+                        <div>6x</div>
+                        <div>R$ 14,90</div>
                     </div>
 
                     <div className="p-5 flex items-center justify-between w-full text-gray-guest">
@@ -109,6 +115,13 @@ export function Payment(){
                         <div>6x</div>
                         <div>R$ 14,90</div>
                     </div>
+
+                    <div className="p-5 flex items-center justify-between w-full text-gray-guest">
+                        <div>Cerveja Heineken</div>
+                        <div>6x</div>
+                        <div>R$ 14,90</div>
+                    </div>
+                    
                 </div>
                 
                 <div className="flex self-center w-3/5 max-sm:w-[90vw] pl-5 mt-4 font-semibold text-xl text-gray-guest">
